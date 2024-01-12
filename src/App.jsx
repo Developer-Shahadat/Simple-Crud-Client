@@ -30,15 +30,15 @@ function App() {
 
   return (
     <>
-      <NavLink to='/users'>User List</NavLink>
+      <NavLink to="/users">User List</NavLink>
       <Outlet></Outlet>
 
       <h1>Simple Crud Client</h1>
 
       <form onSubmit={handleAddUser}>
-        <input type="text" name="name" id="" />
+        <input type="text" name="name" id="" placeholder="enter your name" />
         <br />
-        <input type="email" name="email" id="" />
+        <input type="email" name="email" id="" placeholder="enter your email" />
         <br />
         <input type="submit" value="Add User" />
       </form>
